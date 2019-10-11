@@ -1,0 +1,211 @@
+@import "../../scaffolding.scss";
+@import "../../variables.scss";
+
+.news{
+    
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    color: black;
+    background-color: $bg-lightgrey;
+    // z-index: 2;
+    
+
+}
+
+.news__wrapper{
+    padding-top: 34px;
+    margin: 0 auto;
+    width: 280px;
+    // border:  0.4px solid green;
+    padding-bottom: 30px;
+}
+
+.news__list{
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    // border: 0.5px solid blue;
+}
+.news__item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // border: 0.4px solid palevioletred;
+    &:nth-child(3){
+        display: none;
+    }
+}
+
+.news__item p{
+    width: 210px;
+    // width: 100%;
+    
+    line-height: 27px;
+    text-align: left;
+    // border: 0.4px solid red;
+}
+
+.news__date{
+    display: flex;  
+    flex-direction: column;
+    margin-top: 20px;
+  
+    width: 50px;
+    height: 50px;
+ 
+    // border: 0.4px solid pink; 
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+    position:relative;
+    &:before{
+        content: '';
+        
+        position: absolute;
+        left: 2%;
+        // width: 14px;
+        bottom: -34px;
+        border: 25px solid transparent;
+        border-top: 9px solid black;
+    }
+}
+
+.news__day{
+    font-size: 30px;
+    margin: 0 auto;
+    height: 30px;
+    // width: 100%;
+    text-align: center;
+}
+.news__title{
+    margin: 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    z-index: 2;
+}
+
+
+
+
+
+
+@media (min-width: $tablet-width) {
+
+.news{
+    width:100%;
+}
+
+.news__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    margin: 0 auto;
+    padding: 42px 0px 0px 0px;
+    // border: 0.4px solid red;
+    justify-content: space-between;
+}
+.news__list{
+    display: flex;
+    order: 1;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.news__item{
+    justify-content: stretch;
+   margin: 0;
+   padding: 0;
+    // border: 0.4px solid blue;
+    &:nth-child(3n){
+        display:none;
+    }
+    &:nth-child(2){
+        .news__text {
+            color: transparent;
+        }
+        &:after{
+            position: absolute;
+            width: 218px;
+            content: 'В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!';
+            color:black;
+            margin-left: 74px;
+        }
+    }
+}
+
+.news__title{
+    padding-top: 10px;
+    margin: 0;
+    font-size:40px;
+    text-transform: uppercase;
+}
+.news__text{
+    padding: 0;
+    margin: 0px 0px 0px 21px;
+    // border: 1px solid red;
+}
+.news__date{
+    margin-top: 10px;
+   
+}
+.news__to-all{
+    width: 160px;
+    margin-bottom: 50px;
+    // margin: 0;
+    // padding: 0;
+}
+
+}
+
+@media (min-width: $desktop-width) {
+
+    .news{
+        width:100%;
+        height: 305px;
+    }
+    
+    .news__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width: 960px;
+       
+        margin: 0 auto;
+        padding: 42px 0px 0px 0px;
+        // border: 0.4px solid red;
+        justify-content: space-between;
+    }
+    .news__list{
+        display: flex;
+        order: 1;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    
+    }
+
+    .news__title{
+        margin-left: 70px;
+    }
+    .news__item{
+       justify-content: stretch;
+       margin: 0;
+       padding: 0;
+        // border: 0.4px solid blue;
+        &:nth-child(-n+3){
+            display: flex;
+        }
+        &:nth-child(3){
+            padding-left: 7px;
+        }
+    }
+
+}
