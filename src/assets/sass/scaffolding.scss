@@ -1,0 +1,129 @@
+
+@import "variables.scss";
+
+
+// @font-face {
+//   font-weight: normal;
+//   font-family: "PT Sans Narrow";
+//   font-style: normal;
+//   src: url("../fonts/PTSansNarrow.woff2") format("woff2"), 
+//        url("../fonts/PTSansNarrow.woff2") format("woff");
+// }
+
+// @font-face {
+//   font-weight: bold;
+//   font-family: "PT Sans Narrow";
+//   font-style: normal;
+//   src: url('../../../assets/fonts/PTSansNarrowBold.woff2') format("woff2"), url('../../../assets/fonts/PTSansNarrowBold.woff') format("woff");
+// }
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+  
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #f7f4f1;
+    font-style: normal;
+  
+    background-color: $bg-darkgrey;
+    
+  }
+  
+
+
+
+  // img {
+  //   max-width: 100%;
+  //   height: auto;
+  // }
+
+  .visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .button{
+    display: block;
+    // width: 280px;
+    padding: 11px 0px;
+    text-decoration:none;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    
+    border: 1px solid $border;
+  }
+  .button__rev{
+    // display: block;
+    // width: 160px;
+    // padding: 11px 0px;
+
+    text-decoration:none;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    
+    border: 1px solid $border;
+  }
+  .copyright__link{
+    // display: inline-block;
+    width: 280px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    
+  }
+
+  .social{
+list-style-type: none;
+  }
+
+
+  .owl-carousel{
+    display: flex;
+    height: 100%;
+    width: 100%;
+} 
+.owl-item{
+    position: relative;
+}
+
+.owl-stage{
+    height: auto;
+}
+ .owl-dots{
+    display: block;
+    background-color: transparent;
+    bottom:10px;
+    left: 50%;
+    outline: none;
+}
+.owl-dot{
+    outline: none; 
+}
+
+.owl-dot span{
+ 
+     transform: rotate(45deg);
+     margin: 0;
+     padding: 0;
+     outline: none;
+}
