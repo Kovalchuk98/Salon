@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../dist/pageIndex.css" type="text/css">
-  
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
     <title>Барбершоп</title>
 </head>
 <body>
@@ -323,6 +323,30 @@
 
        
       <script src="../../dist/pageIndex.css"></script>
+      <script src="/node_modules/jquery/dist/jquery.js"></script>
+      <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+      <script src="../../src/assets/scripts/script.js"></script>   
+
+     <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+           loop:true,
+           margin:10,
+          //  navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+           nav:true,
+           responsive:{
+             0:{
+               items:1
+             },
+             600:{
+               items:1
+             },
+             1000:{
+               items:1
+             }
+           }
+         });
+  
+        </script>  
 
 </body>
 </html>

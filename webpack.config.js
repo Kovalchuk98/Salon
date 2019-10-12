@@ -6,6 +6,8 @@ const webpack = require('webpack')
 const conf = {
     entry: {
         pageIndex: './src/index.js',
+        pageWorks:'./src/index-work.js'
+
     },
 
     output: {
@@ -37,6 +39,13 @@ const conf = {
           filename: 'index.html',
           chunks: ['pageIndex']
         }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/pages/works.html',
+            filename: 'works.html',
+            chunks: ['pageWorks']
+          }),
     ],
     module:{
         rules:[
