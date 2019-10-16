@@ -27,11 +27,11 @@ const conf = {
         jQuery: 'jquery',
         'window.jQuery': 'jquery'
       }),
-        new MiniCssExtractPlugin({
-          filename: '[name].css',
-          chunkFilename: 'chunk.css',
-          ignoreOrder: false,
-        }),
+      new MiniCssExtractPlugin({
+        filename: '[name].css',
+        chunkFilename: 'chunk.css',
+        ignoreOrder: false,
+      }),
         new HtmlWebpackPlugin({
           inject: false,
           hash: true,
