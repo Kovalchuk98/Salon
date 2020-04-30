@@ -31,7 +31,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "owl.carousel": "^2.3.4"
   }
 }
